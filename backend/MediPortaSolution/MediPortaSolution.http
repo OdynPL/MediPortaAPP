@@ -1,0 +1,6 @@
+@MediPortaSolution_HostAddress = http://localhost:5047
+
+GET {{MediPortaSolution_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
