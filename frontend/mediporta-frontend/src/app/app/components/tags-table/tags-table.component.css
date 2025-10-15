@@ -1,0 +1,85 @@
+.tags-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.btn-refresh {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-refresh:hover {
+  background-color: #115293;
+}
+
+.page-size select {
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tags-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.tags-table th,
+.tags-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.tags-table th {
+  cursor: pointer;
+  background-color: #f3f3f3;
+  user-select: none;
+}
+
+.tags-table th span {
+  margin-left: 4px;
+  font-size: 0.8em;
+}
+
+.tags-table tr:hover:not(.loading):not(.no-data) {
+  background-color: #f1f7ff;
+}
+
+.loading,
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.tags-pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.tags-pagination button {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.tags-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-info {
+  font-weight: bold;
+}
